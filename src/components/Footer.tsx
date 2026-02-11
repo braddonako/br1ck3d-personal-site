@@ -5,7 +5,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 function Footer() {
   return (
     <footer className="border-t border-border bg-bg-dark">
-      <div className="mx-auto max-w-[1200px] px-6 py-12">
+      <div className="site-container py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">

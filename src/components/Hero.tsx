@@ -6,11 +6,11 @@ import { ArrowRight, Zap } from "lucide-react";
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg">
-      {/* Gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
+      {/* Gradient orbs — kept inside bounds to prevent horizontal overflow */}
+      <div className="absolute top-1/4 left-0 w-80 h-80 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="relative z-10 mx-auto max-w-[1200px] px-6 py-32 text-center">
+      <div className="relative z-10 site-container py-32 text-center">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ function Hero() {
         >
           <a
             href="#contact"
-            className="group bg-primary text-bg-dark px-8 py-4 rounded-full text-base font-semibold hover:bg-primary-light transition-all duration-200 flex items-center gap-2 glow-primary"
+            className="group bg-primary text-bg-dark px-10 py-4 rounded-full text-base font-semibold hover:bg-primary-light transition-all duration-200 flex items-center gap-3 glow-primary"
           >
             Start Your Project
             <ArrowRight
@@ -65,7 +65,7 @@ function Hero() {
           </a>
           <a
             href="#services"
-            className="border border-border text-text-primary px-8 py-4 rounded-full text-base font-medium hover:border-primary/50 hover:text-primary transition-all duration-200"
+            className="border border-border text-text-primary px-10 py-4 rounded-full text-base font-medium hover:border-primary/50 hover:text-primary transition-all duration-200"
           >
             See Our Services
           </a>

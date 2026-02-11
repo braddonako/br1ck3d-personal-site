@@ -35,7 +35,7 @@ function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-[1200px] px-6 py-4 flex items-center justify-between">
+      <div className="site-container py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <span className="text-2xl font-bold font-mono tracking-tighter text-primary transition-all duration-300 group-hover:text-primary-light">
@@ -56,7 +56,7 @@ function Navbar() {
           ))}
           <a
             href="#contact"
-            className="bg-primary text-bg-dark px-5 py-2 rounded-full text-sm font-semibold hover:bg-primary-light transition-colors duration-200"
+            className="bg-primary text-bg-dark px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-light transition-colors duration-200"
           >
             Get Started
           </a>

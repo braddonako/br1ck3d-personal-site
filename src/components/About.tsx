@@ -15,8 +15,8 @@ const ADVANTAGES = [
 function About() {
   return (
     <section id="about" className="relative py-24 md:py-32 bg-bg-card/50">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="site-container">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-16 items-center">
           {/* Left — Text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -58,16 +58,33 @@ function About() {
             </div>
           </motion.div>
 
-          {/* Right — Visual / Code Block */}
+          {/* Right — Photo + Code Block */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="relative"
+            className="relative flex flex-col gap-6"
           >
-            <div className="bg-bg-card border border-border rounded-xl p-6 font-mono text-sm overflow-hidden glow-primary">
-              {/* Terminal header */}
+            {/* Founder Photo */}
+            <div className="relative rounded-xl overflow-hidden border border-border glow-primary">
+              <img
+                src="/founder.png"
+                alt="BR1CK3D Founder"
+                className="w-full max-h-[520px] object-cover object-top"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-bg-dark/90 to-transparent p-6">
+                <p className="text-text-primary font-semibold text-lg">
+                  Brad Donakowski
+                </p>
+                <p className="text-primary text-sm font-mono">
+                  Founder &amp; Lead Engineer
+                </p>
+              </div>
+            </div>
+
+            {/* Code Block */}
+            <div className="bg-bg-card border border-border rounded-xl p-6 font-mono text-sm overflow-hidden">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-3 h-3 rounded-full bg-error/80" />
                 <div className="w-3 h-3 rounded-full bg-warning/80" />
@@ -76,64 +93,20 @@ function About() {
                   br1ck3d-project
                 </span>
               </div>
-              {/* Code lines */}
               <div className="space-y-1 text-[13px]">
                 <p>
-                  <span className="text-secondary-light">const</span>{" "}
-                  <span className="text-primary">project</span>{" "}
-                  <span className="text-text-muted">=</span>{" "}
-                  <span className="text-text-muted">{"{"}</span>
-                </p>
-                <p className="pl-4">
-                  <span className="text-success">name</span>
-                  <span className="text-text-muted">:</span>{" "}
-                  <span className="text-warning">
-                    &quot;your-next-big-idea&quot;
-                  </span>
-                  <span className="text-text-muted">,</span>
-                </p>
-                <p className="pl-4">
-                  <span className="text-success">platforms</span>
-                  <span className="text-text-muted">:</span>{" "}
-                  <span className="text-text-muted">[</span>
-                  <span className="text-warning">&quot;ios&quot;</span>
-                  <span className="text-text-muted">,</span>{" "}
-                  <span className="text-warning">&quot;android&quot;</span>
-                  <span className="text-text-muted">,</span>{" "}
-                  <span className="text-warning">&quot;web&quot;</span>
-                  <span className="text-text-muted">],</span>
-                </p>
-                <p className="pl-4">
-                  <span className="text-success">timeline</span>
-                  <span className="text-text-muted">:</span>{" "}
-                  <span className="text-warning">&quot;weeks&quot;</span>
-                  <span className="text-text-muted">,</span>
-                </p>
-                <p className="pl-4">
-                  <span className="text-success">quality</span>
-                  <span className="text-text-muted">:</span>{" "}
-                  <span className="text-warning">
-                    &quot;production-ready&quot;
-                  </span>
-                  <span className="text-text-muted">,</span>
-                </p>
-                <p>
-                  <span className="text-text-muted">{"}"}</span>
-                  <span className="text-text-muted">;</span>
-                </p>
-                <p className="mt-3">
                   <span className="text-secondary-light">await</span>{" "}
                   <span className="text-primary">br1ck3d</span>
                   <span className="text-text-muted">.</span>
                   <span className="text-success">build</span>
                   <span className="text-text-muted">(</span>
-                  <span className="text-primary">project</span>
+                  <span className="text-warning">&quot;your-idea&quot;</span>
                   <span className="text-text-muted">);</span>
                 </p>
                 <p className="text-text-muted mt-1">
                   <span className="text-text-muted">// </span>
                   <span className="text-text-muted animate-pulse">
-                    Shipping... 
+                    Shipping...
                   </span>
                 </p>
               </div>

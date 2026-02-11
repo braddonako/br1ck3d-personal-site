@@ -52,7 +52,7 @@ const SERVICES = [
 function Services() {
   return (
     <section id="services" className="relative py-24 md:py-32">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="site-container">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -78,7 +78,7 @@ function Contact() {
 
   return (
     <section id="contact" className="relative py-24 md:py-32 bg-bg-card/50">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left — Info */}
           <motion.div
@@ -250,7 +250,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary text-bg-dark py-3.5 rounded-lg font-semibold text-base hover:bg-primary-light transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-primary text-bg-dark py-4 rounded-lg font-semibold text-base hover:bg-primary-light transition-colors duration-200 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <span className="animate-pulse">Sending...</span>
