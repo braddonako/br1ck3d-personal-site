@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/*
+ * ============================================
+ *  BR1CK3D Theme — CSS Custom Properties
+ * ============================================
+ *  These variables are the single source of truth
+ *  for the site's visual design. They map to values
+ *  defined in src/theme/theme.ts for JS access, and
+ *  are consumed here for CSS / Tailwind usage.
+ *
+ *  To change the theme, update these values OR
+ *  update src/theme/theme.ts (for JS-side usage).
+ * ============================================
+ */
+
+@theme {
+  --color-primary: #00D4FF;
+  --color-primary-light: #33DDFF;
+  --color-primary-dark: #00A3CC;
+
+  --color-secondary: #7C3AED;
+  --color-secondary-light: #8B5CF6;
+
+  --color-bg-dark: #0A0A0F;
+  --color-bg-card: #12121A;
+  --color-bg-card-hover: #1A1A26;
+  --color-bg-navbar: rgba(10, 10, 15, 0.85);
+
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  --color-border: #1E293B;
+  --color-border-light: #334155;
+
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+  --color-warning: #F59E0B;
+
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ---- Base Styles ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* ---- Selection ---- */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-bg-dark);
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* ---- Glow effect utility ---- */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.15), 0 0 60px rgba(0, 212, 255, 0.05);
+}
+
+.glow-primary-strong {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.25), 0 0 80px rgba(0, 212, 255, 0.1);
+}
+
+/* ---- Gradient text utility ---- */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Grid background pattern ---- */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
