@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
@@ -68,10 +69,14 @@ function About() {
           >
             {/* Founder Photo */}
             <div className="relative rounded-xl overflow-hidden border border-border glow-primary">
-              <img
+              <Image
                 src="/founder.png"
                 alt="BRICK3D Founder"
+                width={600}
+                height={750}
                 className="w-full max-h-[520px] object-cover object-top"
+                priority={false}
+                sizes="(max-width: 1024px) 100vw, 40vw"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-bg-dark/90 to-transparent p-6">
                 <p className="text-text-primary font-semibold text-lg">

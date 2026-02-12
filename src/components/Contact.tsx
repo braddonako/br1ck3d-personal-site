@@ -3,8 +3,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, MessageSquare, User, Briefcase } from "lucide-react";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "@/lib/firebase";
 import toast from "react-hot-toast";
 
 interface FormData {
@@ -56,6 +54,10 @@ function Contact() {
     setIsSubmitting(true);
 
     try {
+      // Lazy load Firebase only when form is submitted
+      const { collection, addDoc, serverTimestamp } = await import("firebase/firestore");
+      const { db } = await import("@/lib/firebase");
+
       await addDoc(collection(db, "inquiries"), {
         ...form,
         createdAt: serverTimestamp(),
