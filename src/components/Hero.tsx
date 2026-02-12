@@ -41,7 +41,7 @@ function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          BR1CK3D is a software consulting studio that turns your vision into
+          BRICK3D is a software consulting studio that turns your vision into
           production-ready mobile apps, web platforms, and desktop software —
           built to scale from day one.
         </motion.p>

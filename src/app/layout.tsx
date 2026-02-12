@@ -3,9 +3,9 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BR1CK3D — Software Consulting Studio",
+  title: "BRICK3D — Software Consulting Studio",
   description:
-    "BR1CK3D builds production-ready mobile apps, web platforms, and desktop software. From idea to MVP — fast.",
+    "BRICK3D builds production-ready mobile apps, web platforms, and desktop software. From idea to MVP — fast.",
   keywords: [
     "software consulting",
     "mobile app development",
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     "web development",
     "MVP development",
     "desktop apps",
-    "BR1CK3D",
+    "BRICK3D",
   ],
   openGraph: {
-    title: "BR1CK3D — Software Consulting Studio",
+    title: "BRICK3D — Software Consulting Studio",
     description:
       "From idea to MVP — fast. We build mobile, web, and desktop software that ships.",
     type: "website",

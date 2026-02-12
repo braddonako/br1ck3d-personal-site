@@ -1,5 +1,5 @@
 /**
- * BR1CK3D Theme Configuration
+ * BRICK3D Theme Configuration
  *
  * Change values here to update the entire site's look and feel.
  * These values are injected as CSS custom properties in globals.css
@@ -45,7 +45,7 @@ export const theme = {
     heading: "'Inter', system-ui, -apple-system, sans-serif",
     /** Body text font */
     body: "'Inter', system-ui, -apple-system, sans-serif",
-    /** Monospace / code font — great for the techy BR1CK3D vibe */
+    /** Monospace / code font — great for the techy BRICK3D vibe */
     mono: "'JetBrains Mono', 'Fira Code', monospace",
   },
 

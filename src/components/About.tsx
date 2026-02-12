@@ -25,7 +25,7 @@ function About() {
             transition={{ duration: 0.5 }}
           >
             <span className="text-primary font-mono text-sm font-medium tracking-widest uppercase">
-              Why BR1CK3D
+              Why BRICK3D
             </span>
             <h2 className="text-4xl md:text-5xl font-bold font-heading mt-3 mb-6">
               Built Different.{" "}
@@ -33,7 +33,7 @@ function About() {
             </h2>
             <p className="text-text-secondary text-lg leading-relaxed mb-8">
               We&apos;re not a massive agency with layers of project managers
-              between you and the engineers. At BR1CK3D, you work directly with
+              between you and the engineers. At BRICK3D, you work directly with
               senior developers who understand both the business and the code.
               The result? Faster delivery, fewer miscommunications, and software
               that actually solves your problem.
@@ -70,7 +70,7 @@ function About() {
             <div className="relative rounded-xl overflow-hidden border border-border glow-primary">
               <img
                 src="/founder.png"
-                alt="BR1CK3D Founder"
+                alt="BRICK3D Founder"
                 className="w-full max-h-[520px] object-cover object-top"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-bg-dark/90 to-transparent p-6">
@@ -90,13 +90,13 @@ function About() {
                 <div className="w-3 h-3 rounded-full bg-warning/80" />
                 <div className="w-3 h-3 rounded-full bg-success/80" />
                 <span className="ml-2 text-text-muted text-xs">
-                  br1ck3d-project
+                  brick3d-project
                 </span>
               </div>
               <div className="space-y-1 text-[13px]">
                 <p>
                   <span className="text-secondary-light">await</span>{" "}
-                  <span className="text-primary">br1ck3d</span>
+                  <span className="text-primary">brick3d</span>
                   <span className="text-text-muted">.</span>
                   <span className="text-success">build</span>
                   <span className="text-text-muted">(</span>

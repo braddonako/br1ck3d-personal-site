@@ -10,7 +10,7 @@ function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <span className="text-xl font-bold font-mono tracking-tighter text-primary">
-              BR1CK3D
+              BRICK3D
             </span>
             <span className="text-text-muted text-sm hidden sm:inline">
               — Software Consulting Studio
@@ -49,7 +49,7 @@ function Footer() {
         {/* Divider */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-text-muted text-sm">
-            &copy; {CURRENT_YEAR} BR1CK3D. All rights reserved.
+            &copy; {CURRENT_YEAR} BRICK3D. All rights reserved.
           </p>
           <p className="text-text-muted text-xs font-mono">
             Built with precision.

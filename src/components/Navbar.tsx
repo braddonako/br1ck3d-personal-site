@@ -39,7 +39,7 @@ function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <span className="text-2xl font-bold font-mono tracking-tighter text-primary transition-all duration-300 group-hover:text-primary-light">
-            BR1CK3D
+            BRICK3D
           </span>
         </a>
 

@@ -108,7 +108,7 @@ function Contact() {
                 <div>
                   <div className="text-text-muted text-sm">Email</div>
                   <div className="text-text-primary font-medium">
-                    hello@br1ck3d.com
+                    braddonako@gmail.com
                   </div>
                 </div>
               </div>
